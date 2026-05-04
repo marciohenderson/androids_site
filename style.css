@@ -24,26 +24,58 @@
     --font-android: 'android', cursive;
 }
 body{
-    background-color: #C5EBD6;
+    background-color: bisque;
     font-family: var(--font-padrao);
 }
+body::-webkit-scrollbar{
+    display: none;
+}
+.externo::after{
+    content: '🔗';
+}
 header{
-    background-color: var(--cor4);
-    height: 150px;
-    width: auto;
-    
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 10px;
 }
 header > h1{
     color: #ffffff;
     font-family: var(--font-destaque);
-    text-align: center;
+    font-size: 3.7em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.500);
     
 }
-header>p {
+header > p {
     color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.3em;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
 }
-header > nav{
-    background-color: var(--cor5);
+nav{
+    padding: 10px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.500) ;
+    text-align: start;
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 main{
     min-width: 300px;
@@ -58,19 +90,97 @@ main{
 main h1{
     color: var(--cor5);
     font-family: var(--font-android);
+    font-size: 1.8em;
+    font-weight: normal;
 }
 main h2{
     font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.7em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 5px;
+}
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 2px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
 }
 main img{
     width: 100%;
 }
 .pequena{
-    width: 50%;
+    max-width: 350px;
     margin: auto;
     display: block;
+}
+div.container-youtube{
+    background-color: #1A5C37;
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 58%;
+}
+div.container-youtube > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.300);
+    margin-bottom: 30px;
+}
+aside h3{
+    background-color: #1A5C37;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-position: inside;
+    list-style-type: '🗸';
+    columns: 2;
 }
 footer{
     background-color: var(--cor5);
     color: white;
+    padding: 1px;
+}
+footer p{
+    text-align: center;
+    font-size: 1em;
+}
+footer > p > span{
+    font-weight: bold;
+}
+footer a{
+    color: white;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
