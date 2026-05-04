@@ -1,2 +1,2 @@
 # androids_site
-Desafio 10 do curso do Gustavo Guanabara de HTML e CSS, desenvolvendo o site do android
+Site simples sobre a história do Android, atualizado até o Android 10,apenas usando CSS e HTML
